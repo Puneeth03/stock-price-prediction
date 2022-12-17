@@ -7,9 +7,9 @@ This is a model to predict stock price using its history dataset using some deep
 3. Features are scaled(normalized) using minmaxscalar within the range (0,1).
 4. We split the dataset into train data and test data with a window size of 22(experimental value).
 5. After splitting the data, the train data is used to train the model built using a sequence of lstm, convolutional, dropout and dense layers.
-   Note: All the numerical values found by trail and error model because values can be different for each stock but valid for most of the stocks.
 6. The model is compiled using 'adam' optimizer and 'root mean error' as loss function.
-7. The model is then fitted with 15 batch size and 20 epochs.
+7. The model is then fitted with 16 batch size and 32 epochs.
 8. Then the values are predicted for test data and displayed.
+   Note: All the numerical values found by trail and error model because values can be different for each stock but valid for most of the stocks.
 
 This model show high performance and accuracy but cannot be used directly because there are many other factors that the price of a stock depend on. The model is to only give some insights how stock MIGHT move.
