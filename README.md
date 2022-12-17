@@ -13,3 +13,6 @@ This is a model to predict stock price using its history dataset using some deep
    Note: All the numerical values found by trail and error model because values can be different for each stock but valid for most of the stocks.
 
 This model show high performance and accuracy but cannot be used directly because there are many other factors that the price of a stock depend on. The model is to only give some insights how stock MIGHT move.
+
+
+The splitting of datset(load_data function) is referred from a blog on kaggle.
