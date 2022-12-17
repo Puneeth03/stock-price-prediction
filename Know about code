@@ -1,0 +1,77 @@
+We here are using the ADANIPORTS price history from 2000-2021 downloaded from Kaggle(https://www.kaggle.com/datasets/rohanrao/nifty50-stock-market-data?resource=download)
+You can use the same code for different stocks by changing some values (trail and error).
+First is to consider the moving average then choosing window size.
+Note: Make sure to change the shape on line 93,95, 98 and 100 with shape values of test and train data.
+You also need to check batch_size and epochs which play a major role in finding accurate predictions.
+The model performance is measure by R2 score (the more close to 1 the better the model is).
+
+The results are also shown in plots with the actual and predicted values.
+Output:
+Epoch 1/32
+110/110 [==============================] - 9s 39ms/step - loss: 0.0019 - val_loss: 7.9376e-04
+Epoch 2/32
+110/110 [==============================] - 3s 30ms/step - loss: 5.5541e-04 - val_loss: 6.4474e-04
+Epoch 3/32
+110/110 [==============================] - 3s 30ms/step - loss: 4.9500e-04 - val_loss: 3.5982e-04
+Epoch 4/32
+110/110 [==============================] - 3s 30ms/step - loss: 5.2714e-04 - val_loss: 8.3893e-04
+Epoch 5/32
+110/110 [==============================] - 3s 31ms/step - loss: 4.1003e-04 - val_loss: 3.8466e-04
+Epoch 6/32
+110/110 [==============================] - 3s 30ms/step - loss: 3.5189e-04 - val_loss: 3.8877e-04
+Epoch 7/32
+110/110 [==============================] - 3s 30ms/step - loss: 3.3073e-04 - val_loss: 3.3997e-04
+Epoch 8/32
+110/110 [==============================] - 3s 30ms/step - loss: 3.3109e-04 - val_loss: 3.8288e-04
+Epoch 9/32
+110/110 [==============================] - 4s 33ms/step - loss: 3.7707e-04 - val_loss: 3.2116e-04
+Epoch 10/32
+110/110 [==============================] - 3s 30ms/step - loss: 3.3350e-04 - val_loss: 3.2735e-04
+Epoch 11/32
+110/110 [==============================] - 3s 31ms/step - loss: 3.1386e-04 - val_loss: 3.2570e-04
+Epoch 12/32
+110/110 [==============================] - 4s 32ms/step - loss: 3.6852e-04 - val_loss: 3.2523e-04
+Epoch 13/32
+110/110 [==============================] - 4s 32ms/step - loss: 3.3107e-04 - val_loss: 7.9767e-04
+Epoch 14/32
+110/110 [==============================] - 4s 32ms/step - loss: 3.1087e-04 - val_loss: 6.3646e-04
+Epoch 15/32
+110/110 [==============================] - 4s 34ms/step - loss: 2.7548e-04 - val_loss: 2.6918e-04
+Epoch 16/32
+110/110 [==============================] - 4s 32ms/step - loss: 3.1644e-04 - val_loss: 6.0357e-04
+Epoch 17/32
+110/110 [==============================] - 3s 31ms/step - loss: 3.1329e-04 - val_loss: 3.8630e-04
+Epoch 18/32
+110/110 [==============================] - 4s 33ms/step - loss: 2.8839e-04 - val_loss: 2.7868e-04
+Epoch 19/32
+110/110 [==============================] - 3s 30ms/step - loss: 3.9853e-04 - val_loss: 3.6669e-04
+Epoch 20/32
+110/110 [==============================] - 3s 32ms/step - loss: 2.9196e-04 - val_loss: 3.5721e-04
+Epoch 21/32
+110/110 [==============================] - 3s 31ms/step - loss: 2.7793e-04 - val_loss: 4.2512e-04
+Epoch 22/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.6728e-04 - val_loss: 3.2052e-04
+Epoch 23/32
+110/110 [==============================] - 4s 35ms/step - loss: 2.7428e-04 - val_loss: 2.7371e-04
+Epoch 24/32
+110/110 [==============================] - 4s 38ms/step - loss: 2.6755e-04 - val_loss: 2.6482e-04
+Epoch 25/32
+110/110 [==============================] - 4s 38ms/step - loss: 2.6926e-04 - val_loss: 4.1225e-04
+Epoch 26/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.8009e-04 - val_loss: 3.1015e-04
+Epoch 27/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.5121e-04 - val_loss: 2.5789e-04
+Epoch 28/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.4789e-04 - val_loss: 2.9534e-04
+Epoch 29/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.6141e-04 - val_loss: 2.6981e-04
+Epoch 30/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.8554e-04 - val_loss: 2.8226e-04
+Epoch 31/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.6743e-04 - val_loss: 2.9475e-04
+Epoch 32/32
+110/110 [==============================] - 3s 30ms/step - loss: 2.5505e-04 - val_loss: 4.1624e-04
+61/61 [==============================] - 2s 17ms/step
+16/16 [==============================] - 0s 16ms/step
+r2 train:  0.9875211526664601
+r2 test:  0.979117369734409
